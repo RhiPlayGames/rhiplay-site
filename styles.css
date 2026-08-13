@@ -139,7 +139,7 @@ body{
   box-shadow:0 25px 55px rgba(0,0,0,.2);
   overflow:hidden;
   position:relative;
-  transform:rotate(2deg);
+  transform:none;
   padding:5px;
 }
 
@@ -332,7 +332,7 @@ body{
   .phone-shell{
     width:330px;
     height:548px;
-    transform:rotate(2deg);
+    transform:none;
   }
 
   .legal-page{
