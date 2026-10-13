@@ -217,6 +217,17 @@ body{
   color:#4f5662;
 }
 
+.legal-page ol{
+  font-size:16px;
+  line-height:1.75;
+  color:#4f5662;
+  padding-left:28px;
+}
+
+.legal-page ol li{
+  margin-bottom:8px;
+}
+
 .legal-page .updated,
 .legal-page .note{
   color:var(--grey);
