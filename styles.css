@@ -102,7 +102,7 @@ body{
   max-width:590px;
   font-size:17px;
   line-height:1.7;
-  color:var(--grey);
+  color:#000;
   margin:0;
 }
 
@@ -141,8 +141,7 @@ body{
 }
 
 .web-play-button:hover{
-  transform:translateY(-1px);
-  opacity:.92;
+  /* No hover movement or visual rollover effect. */
 }
 
 .phone-wrap{
