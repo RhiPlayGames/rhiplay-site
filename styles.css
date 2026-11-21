@@ -390,3 +390,33 @@ body{
     gap:12px 20px;
   }
 }
+
+
+/* First Guess unified website preview: responsive, HTML-first game entry. */
+.game-portal {background:#050505;color:#fff;min-height:calc(100vh - 200px);padding:30px max(20px,calc((100% - 1200px)/2)) 55px;}
+.game-portal h1,.game-portal h2,.game-portal h3 {font-family:Oswald,Arial,sans-serif;font-weight:500;}
+.portal-intro {display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 35px;align-items:center;padding:18px 0 24px;}
+.portal-intro h1 {font-size:clamp(30px,3vw,42px);margin:0;letter-spacing:.03em;text-transform:uppercase;}
+.portal-intro > p {max-width:650px;line-height:1.7;color:#ddd;margin:0;font-size:15px;grid-column:1;}
+.portal-actions {display:flex;align-items:center;gap:16px;flex-direction:column;grid-column:2;grid-row:1 / span 2;}
+.portal-actions .web-play-button {margin:0;white-space:nowrap;}
+.portal-actions .store-buttons {margin:0;justify-content:center;gap:10px;}
+.portal-actions .store-buttons img {height:40px;max-width:145px;}
+.portal-daily {margin:10px 0 26px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:17px 22px;background:linear-gradient(110deg,#211304,#100c06);border:1px solid #f2a515;border-radius:12px;box-shadow:inset 0 0 18px rgba(254,94,2,.19);}
+.portal-daily > div {display:flex;align-items:center;flex-wrap:wrap;gap:12px;}
+.portal-daily strong {font:500 clamp(22px,3vw,32px) Oswald,Arial,sans-serif;color:#ffd890;}
+.portal-daily span {font-size:14px;color:#f7e0a9;}
+.portal-daily a,.portal-grid a {background:#fe5e02;color:#fff;font:500 16px Oswald,Arial,sans-serif;text-decoration:none;border-radius:8px;padding:10px 22px;display:inline-flex;justify-content:center;align-items:center;min-height:42px;}
+.portal-games h2 {display:flex;align-items:center;gap:14px;font-size:20px;margin:0 0 16px;justify-content:center;}
+.portal-games h2::before,.portal-games h2::after {content:"";height:1px;background:#d45d0a;flex:1;}
+.portal-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.portal-grid article {display:flex;align-items:center;justify-content:space-between;gap:15px;background:#111;border:1px solid #fe5e02;border-radius:12px;padding:15px 16px;min-width:0;}
+.portal-grid h3 {font-size:18px;margin:0 0 3px;}
+.portal-grid p {font-size:13px;color:#d9d9d9;line-height:1.4;margin:0;}
+.portal-grid a {min-width:82px;}
+.portal-help {margin-top:35px;padding:25px;border-top:1px solid #3a2c22;text-align:center;}
+.portal-help h2 {font-size:24px;margin:0 0 8px;}
+.portal-help p {max-width:790px;margin:0 auto;line-height:1.7;color:#ddd;}
+.portal-help a {color:#ffa45d;}
+@media(max-width:920px) {.portal-intro {grid-template-columns:1fr;text-align:center;}.portal-intro > p {grid-column:1;margin:auto;}.portal-actions {grid-column:1;grid-row:auto;margin-top:15px;}.portal-grid {grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:650px) {.game-portal {padding:20px 14px 36px;}.portal-intro h1 {font-size:30px;}.portal-actions .web-play-button {width:100%;white-space:normal;text-align:center;}.portal-grid {grid-template-columns:1fr;}.portal-grid article {padding:13px 12px;}.portal-daily {padding:14px;flex-direction:column;text-align:center;}.portal-daily > div {justify-content:center;}.portal-intro > p {font-size:14px;}.portal-help {padding:22px 8px;}}
